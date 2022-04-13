@@ -35,3 +35,9 @@ for fav_action_movie in root.findall("./genre[@category='Action']/decade/movie[@
 
 for movie in root.findall("./genre/decade/movie/[year='1992']"):
     print(movie.attrib)
+
+
+# update_attribute = root.find("./genre/decade/movie[@title='Back 2 the Future']")
+# print(update_attribute)
+# update_attribute.attrib["title"] = "Back to the Future"
+# print(update_attribute.attrib)
